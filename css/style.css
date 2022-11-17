@@ -16,11 +16,11 @@ body{
 /* HEADER */
 header{
     background-color: orangered;
-    padding: 15px 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 30;
 }
 
 header .header-container{
@@ -28,6 +28,7 @@ header .header-container{
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding: 15px 10px;
 }
 
 header .header-container nav ul{
@@ -55,6 +56,66 @@ header .header-container img{
 /* MAIN */
 main{
  margin-top: 100px;
+}
+
+main .main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main .main-container > div{
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+main .main-container > div:hover{
+    cursor: pointer;
+}
+
+main .main-container > div .img-container{
+    position: relative;
+}
+
+main .main-container > div .img-container img{
+    width: 100%;
+}
+
+
+main .main-container > div .img-container img.secondary-img{
+    display: none;
+}
+
+main .main-container > div .img-container:hover img.main-img{
+    display: none;
+}
+
+main .main-container > div .img-container:hover img.secondary-img{
+    display: inline-block;
+}
+
+main .main-container > div .img-container .tags-container{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+main .main-container > div .img-container .tags-container > span{
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+main .main-container > div .img-container .tags-container > span.sale{
+    color: white;
+    background-color: red;
+}
+
+main .main-container > div .img-container .tags-container > span.tag{
+    color: white;
+    background-color: green;
 }
 
 /* FOOTER */
