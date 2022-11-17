@@ -95,6 +95,16 @@ main .main-container > div .img-container:hover img.secondary-img{
     display: inline-block;
 }
 
+main .main-container > div .img-container .favorite-container{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 5px 15px;
+    font-size: 3em;
+    color: black;
+    background-color: white;
+}
+
 main .main-container > div .img-container .tags-container{
     position: absolute;
     left: 0;
